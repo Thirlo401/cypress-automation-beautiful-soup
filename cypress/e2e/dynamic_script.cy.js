@@ -1,0 +1,122 @@
+// Cypress script generated dynamically
+describe('Dynamic Test Suite', () => {
+
+  before(() => {
+    // Visit the target application
+    cy.visit('https://qa.hospersa.umbuthoadmin.co.za/application');
+  });
+
+  it('fills out the form and submits it', () => {
+
+    cy.get('[name="viewport"]').should('be.visible');
+    cy.get('[name="csrf-token"]').should('be.visible');
+    cy.get('link').should('be.visible');
+    cy.get('#app').should('be.visible');
+    cy.get('#register_holder').should('be.visible');
+    cy.get('#registerFrm').should('be.visible');
+    cy.get('[name="_token"]').type('Sample Text', { delay: 50 });
+    cy.get('#product_start_date').type('Sample Text', { delay: 50 });
+    cy.get('#birth_date').type('Sample Text', { delay: 50 });
+    cy.get('#bank_id').type('Sample Text', { delay: 50 });
+    cy.get('#branch_id').type('Sample Text', { delay: 50 });
+    cy.get('#branch_code').type('Sample Text', { delay: 50 });
+    cy.get('#account_holder').type('Sample Text', { delay: 50 });
+    cy.get('#account_number').type('4111111111111111', { delay: 50 });
+    cy.get('#account_type').type('Sample Text', { delay: 50 });
+    cy.get('#firstname').type('John', { delay: 50 });
+    cy.get('#initials').type('Sample Text', { delay: 50 });
+    cy.get('#surname').type('John', { delay: 50 });
+    cy.get('#citizen_holder').should('be.visible');
+    cy.get('[name="citizen"]').type('Sample Text', { delay: 50 });
+    cy.get('[name="citizen"]').type('Sample Text', { delay: 50 });
+    cy.get('#id_number_holder').should('be.visible');
+    cy.get('#id_number').type('4111111111111111', { delay: 50 });
+    cy.get('#passportOption').should('be.visible');
+    cy.get('#passport_number_holder').should('be.visible');
+    cy.get('#passport_no').type('Sample Text', { delay: 50 });
+    cy.get('#country_id').select('Option 1');
+    cy.get('#gender_id').select('Option 1');
+    cy.get('#cell_holder').should('be.visible');
+    cy.get('#cell').type('0812345678', { delay: 50 });
+    cy.get('#email_holder').should('be.visible');
+    cy.get('#email').type('johndoe@example.com', { delay: 50 });
+    cy.get('#password').type('SecurePassword123!', { delay: 50 });
+    cy.get('#password-confirm').type('SecurePassword123!', { delay: 50 });
+    cy.get('#member_category_id').select('Option 1');
+    cy.get('#employment_type').select('Option 1');
+    cy.get('#employment_details_holder').should('be.visible');
+    cy.get('#employer_id').select('Option 1');
+    cy.get('#occupation').select('Option 1');
+    cy.get('#employee_number_holder').should('be.visible');
+    cy.get('#employee_number_public').type('4111111111111111', { delay: 50 });
+    cy.get('#payment_method_id').select('Option 1');
+    cy.get('#paymentDetailsLinkContainer').should('be.visible');
+    cy.get('#paymentDetailsLink').should('be.visible');
+    cy.get('#readConsentBtn').should('be.visible').click();
+    cy.get('#research_consent_yes').type('Sample Text', { delay: 50 });
+    cy.get('#research_consent_no').type('Sample Text', { delay: 50 });
+    cy.get('#cancel_current_union_yes').type('Sample Text', { delay: 50 });
+    cy.get('#cancel_current_union_no').type('Sample Text', { delay: 50 });
+    cy.get('#postalDiv').should('be.visible');
+    cy.get('#autocomplete').type('Sample Text', { delay: 50 });
+    cy.get('#address1').type('123 Main St', { delay: 50 });
+    cy.get('#address2').type('123 Main St', { delay: 50 });
+    cy.get('#address3').type('123 Main St', { delay: 50 });
+    cy.get('#address4').type('123 Main St', { delay: 50 });
+    cy.get('#address5').type('123 Main St', { delay: 50 });
+    cy.get('#postal_province').select('Option 1');
+    cy.get('#readTCsBtn').should('be.visible').click();
+    cy.get('#term_and_conditions').type('Sample Text', { delay: 50 });
+    cy.get('#readDisclaimerBtn').should('be.visible').click();
+    cy.get('#registerBtnHolder').should('be.visible');
+    cy.get('#registerBtn').should('be.visible').click();
+    cy.get('button').should('be.visible').click();
+    cy.get('#myDisclaimer').should('be.visible');
+    cy.get('button').should('be.visible').click();
+    cy.get('#myModalLabel').should('be.visible');
+    cy.get('#myDisclaimerCloseModalBtn').should('be.visible').click();
+    cy.get('#myConsent').should('be.visible');
+    cy.get('button').should('be.visible').click();
+    cy.get('#myModalLabel').should('be.visible');
+    cy.get('#myConsentCloseModalBtn').should('be.visible').click();
+    cy.get('#myTermsAndConditions').should('be.visible');
+    cy.get('button').should('be.visible').click();
+    cy.get('#myModalLabel').should('be.visible');
+    cy.get('#public_member_type').should('be.visible');
+    cy.get('#member_names').should('be.visible');
+    cy.get('#public_product_price').should('be.visible');
+    cy.get('#start_date').type('Sample Text', { delay: 50 });
+    cy.get('#private_member_type').should('be.visible');
+    cy.get('#private_product_price').should('be.visible');
+    cy.get('#myTermsAndConditionsCloseModalBtn').should('be.visible').click();
+    cy.get('#clientTCs').should('be.visible');
+    cy.get('button').should('be.visible').click();
+    cy.get('#myModalLabel').should('be.visible');
+    cy.get('#clientTcsCloseModalBtn').should('be.visible').click();
+    cy.get('#paymentDetailModal').should('be.visible');
+    cy.get('#registerPaymentDetailsForm').should('be.visible');
+    cy.get('[name="_token"]').type('Sample Text', { delay: 50 });
+    cy.get('#paymentToken').type('Sample Text', { delay: 50 });
+    cy.get('button').should('be.visible').click();
+    cy.get('#myModalLabel').should('be.visible');
+    cy.get('#method').select('Option 1');
+    cy.get('#doDisplayDiv').should('be.visible');
+    cy.get('#debitOrderDiv').should('be.visible');
+    cy.get('#bank').select('Option 1');
+    cy.get('#branch').select('Option 1');
+    cy.get('#bcode').type('Sample Text', { delay: 50 });
+    cy.get('#holder').type('Sample Text', { delay: 50 });
+    cy.get('#number').type('4111111111111111', { delay: 50 });
+    cy.get('#type').select('Option 1');
+    cy.get('#paymentDetailCloseModalBtn').should('be.visible').click();
+    cy.get('#paymentDetailDoneModalBtn').should('be.visible').click();
+    cy.get('script').should('be.visible');
+    cy.get('script').should('be.visible');
+    cy.get('script').should('be.visible');
+    cy.get('script').should('be.visible');
+
+    // Verify the URL
+    cy.url().should('include', '/dashboard');
+
+  });
+});
